@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MinePulse — Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <a class="brand" href="index.html">MinePulse</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart <span class="cart-count">0</span></a>
+      <a href="location.html">Location</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a class="button button--secondary" href="location.html">Delivery info</a>
+  </header>
+
+  <main>
+    <section class="section section--intro section--cart-bg reveal">
+      <div class="section__heading">
+        <strong>Cart & delivery</strong>
+        <h2>Review your order and save the address where your package should be delivered.</h2>
+      </div>
+      <div class="checkout-grid">
+        <div class="cart-panel__inner">
+          <h2>Your Cart</h2>
+          <div class="cart-items"></div>
+          <div class="cart-summary">
+            <span>Total</span>
+            <strong class="cart-total">$0.00</strong>
+          </div>
+          <button class="button button--primary continue-checkout">Proceed to checkout</button>
+        </div>
+
+        <div class="delivery-panel__inner">
+          <h2>Delivery details</h2>
+          <form id="delivery-form" class="delivery-form">
+            <label>
+              Full name
+              <input name="name" type="text" placeholder="Jane Miner" required />
+            </label>
+            <label>
+              Email address
+              <input name="email" type="email" placeholder="jane@example.com" required />
+            </label>
+            <label>
+              Phone number
+              <input name="phone" type="tel" placeholder="(555) 123-4567" required />
+            </label>
+            <label>
+              Street address
+              <input name="address" type="text" placeholder="123 Mining Trail" required />
+            </label>
+            <div class="form-row">
+              <label>
+                City
+                <input name="city" type="text" placeholder="Quartz City" required />
+              </label>
+              <label>
+                Postal code
+                <input name="postal" type="text" placeholder="90210" required />
+              </label>
+            </div>
+            <label>
+              Country
+              <input name="country" type="text" placeholder="Terra" required />
+            </label>
+            <button type="submit" class="button button--secondary">Save delivery</button>
+          </form>
+          <div class="delivery-summary">
+            <h3>Saved delivery info</h3>
+            <div class="customer-details"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>MinePulse • Review your cart and enter delivery details here.</p>
+    <div class="contact-info">
+      <a href="mailto:tshungutyrone@gmail.com" class="contact-badge" title="Email"><i class="fas fa-envelope"></i> tshungutyrone@gmail.com</a>
+      <a href="https://wa.me/212694480217" target="_blank" rel="noopener" class="contact-badge" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  <div class="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

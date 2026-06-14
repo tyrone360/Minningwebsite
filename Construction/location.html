@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MinePulse — Location</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="location">
+  <header class="site-header">
+    <a class="brand" href="index.html">MinePulse</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart <span class="cart-count">0</span></a>
+      <a href="location.html">Location</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a class="button button--secondary" href="cart.html">Edit cart</a>
+  </header>
+
+  <main>
+    <section class="section section--intro reveal">
+      <div class="section__heading">
+        <strong>Delivery location</strong>
+        <h2>Where should your mining order be shipped?</h2>
+      </div>
+      <div class="location-grid">
+        <div class="location-card">
+          <h3>Saved address</h3>
+          <div class="customer-details"></div>
+        </div>
+        <div class="location-card">
+          <h3>How it works</h3>
+          <p>Enter your delivery address on the cart page and MinePulse will remember it for your next order.</p>
+        </div>
+      </div>
+      <div class="map-card reveal">
+        <h3>Our operations map</h3>
+        <p>MinePulse maintains a verified pickup and packing location. This map shows our main shipping hub and proof of origin for the minerals we ship.</p>
+        <iframe class="map-frame" loading="lazy" src="https://maps.google.com/maps?q=Quartz%20City%20Mines&amp;output=embed"></iframe>
+      </div>
+      <div class="proof-gallery reveal">
+        <h3>Location proof gallery</h3>
+        <div class="proof-grid proof-grid--location">
+          <article class="proof-card proof-card--one">
+            <div class="proof-copy"><strong>Warehouse exterior</strong><p>A verified distribution hub used for packing orders.</p></div>
+          </article>
+          <article class="proof-card proof-card--two">
+            <div class="proof-copy"><strong>Inventory staging</strong><p>Minerals are staged and quality-checked before shipment.</p></div>
+          </article>
+          <article class="proof-card proof-card--three">
+            <div class="proof-copy"><strong>Logistics overview</strong><p>Packaging, tracking, and delivery happen from this hub.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>MinePulse • Your delivery hub and order tracking center.</p>
+    <div class="contact-info">
+      <a href="mailto:tshungutyrone@gmail.com" class="contact-badge" title="Email"><i class="fas fa-envelope"></i> tshungutyrone@gmail.com</a>
+      <a href="https://wa.me/212694480217" target="_blank" rel="noopener" class="contact-badge" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  <div class="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

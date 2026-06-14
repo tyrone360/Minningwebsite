@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MinePulse — Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="checkout">
+  <header class="site-header">
+    <a class="brand" href="index.html">MinePulse</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart <span class="cart-count">0</span></a>
+      <a href="location.html">Location</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a class="button button--secondary" href="cart.html">Back to cart</a>
+  </header>
+
+  <main>
+    <section class="section section--intro reveal">
+      <div class="section__heading">
+        <strong>Checkout</strong>
+        <h2>Confirm your order and finalize delivery details.</h2>
+      </div>
+      <div class="checkout-grid">
+        <div class="cart-panel__inner">
+          <h2>Order summary</h2>
+          <div class="cart-items"></div>
+          <div class="cart-summary">
+            <span>Total</span>
+            <strong class="cart-total">$0.00</strong>
+          </div>
+        </div>
+
+        <div class="delivery-panel__inner">
+          <h2>Delivery information</h2>
+          <div class="customer-details"></div>
+          <div class="delivery-summary" style="margin-top: 1.5rem;">
+            <h3>Ready to place order</h3>
+            <p class="cart-empty">Confirm your cart and delivery details, then complete your purchase.</p>
+          </div>
+          <button class="button button--primary place-order" style="margin-top: 1.5rem;">Place order</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>MinePulse • Confirm your order and delivery details.</p>
+    <div class="contact-info">
+      <a href="mailto:tshungutyrone@gmail.com" class="contact-badge" title="Email"><i class="fas fa-envelope"></i> tshungutyrone@gmail.com</a>
+      <a href="https://wa.me/212694480217" target="_blank" rel="noopener" class="contact-badge" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  <div class="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

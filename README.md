@@ -17,8 +17,8 @@ This project is a modern and responsive mining company website developed to prov
 
 ## Technologies Used
 
-- HTML5
-- CSS3
+- HTML (5)
+- CSS (3)
 - JavaScript
 - Visual Studio Code
 

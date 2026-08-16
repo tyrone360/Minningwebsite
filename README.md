@@ -15,7 +15,6 @@ This project is a modern and responsive mining company website developed to prov
 - Navigation menu for easy access to all pages
 - Professional styling and layout
 
-## Technologies Used
 
 - HTML (5)
 - CSS (3)

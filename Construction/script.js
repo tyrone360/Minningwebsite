@@ -77,7 +77,7 @@ function updateCartCount() {
   const count = getCartCount(cart);
   cartCountElements.forEach((element) => {
     element.textContent = count;
-  });
+  });//
 }
 
 function addToCart(productId) {
@@ -138,7 +138,7 @@ function renderCart() {
       </div>
       <div class="cart-item__price">${formatPrice(item.quantity * item.price)}</div>
     `;
-    cartItemsElement.appendChild(card);
+    cartItemsElement.appendChild(card);//
   });
 
   cartTotalElement.textContent = formatPrice(total);
@@ -208,7 +208,7 @@ function attachDeliveryForm() {
     const customer = {
       name: formData.get('name')?.toString().trim() || '',
       email: formData.get('email')?.toString().trim() || '',
-      phone: formData.get('phone')?.toString().trim() || '',
+      phone: formData.get('phone')?.toString().trim() || '',//
       address: formData.get('address')?.toString().trim() || '',
       city: formData.get('city')?.toString().trim() || '',
       postal: formData.get('postal')?.toString().trim() || '',
@@ -268,7 +268,7 @@ function initSlideshow() {
   slidePrevButton?.addEventListener('click', prevSlide);
   showSlide(slideIndex);
   setInterval(nextSlide, 6000);
-}
+}//
 
 function handlePlaceOrder() {
   if (!placeOrderButton) return;
@@ -318,7 +318,7 @@ function revealOnScroll() {
   const revealElements = document.querySelectorAll('.reveal');
   if (!revealElements.length) return;
 
-  const observer = new IntersectionObserver(
+  const observer = new IntersectionObserver(//
     (entries) => {
       entries.forEach((entry) => {
         entry.target.classList.toggle('is-visible', entry.isIntersecting);
@@ -340,14 +340,14 @@ function init() {
   revealOnScroll();
   initSlideshow();
 
-  if (pageType === 'cart') {
+  if (pageType === 'cart') {//
     renderCart();
     fillDeliveryForm();
     handleContinueCheckout();
   }
 
   if (pageType === 'checkout') {
-    renderCart();
+    renderCart();//
     renderCustomerDetails();
     handlePlaceOrder();
   }

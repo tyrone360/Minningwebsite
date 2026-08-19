@@ -3,8 +3,6 @@
 ## Overview
 This project is a modern and responsive mining company website developed to provide information about the company, its services, operations, and contact details. The website is designed to create a professional online presence and improve communication with clients, investors, and stakeholders.
 
-## Features
-
 - Responsive design for desktop, tablet, and mobile devices
 - Modern and user-friendly interface
 - Home page with company introduction
@@ -15,10 +13,7 @@ This project is a modern and responsive mining company website developed to prov
 - Navigation menu for easy access to all pages
 - Professional styling and layout
 
-
 - HTML (5)
 - CSS (3)
 - JavaScript
 - Visual Studio Code
-
-## Project Structure

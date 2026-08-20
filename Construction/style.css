@@ -14,7 +14,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;//
+  //
 }
 
 body {
@@ -105,7 +106,7 @@ img {
   margin: 0 0 1.2rem;
   max-width: 14ch;
 }
-
+//
 .hero p {
   max-width: 620px;
   color: var(--muted);
@@ -240,7 +241,7 @@ img {
 .spark--three {
   bottom: 18%;
   left: 22%;
-}
+}//
 
 .spark--four {
   bottom: 25%;
@@ -310,7 +311,7 @@ img {
 .section--shop-hero > * {
   position: relative;
   z-index: 1;
-}
+}//
 
 .section--cart-bg > * {
   position: relative;

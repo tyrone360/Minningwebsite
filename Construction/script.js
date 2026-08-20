@@ -12,7 +12,7 @@ const products = [
   { id: 8, name: 'Celestial Fragment', price: 58.0 },
   { id: 9, name: 'Rift Stone', price: 33.0 },
 ];
-
+//
 const body = document.body;
 const pageType = body.dataset.page || '';
 const toastElement = document.querySelector('.toast');
@@ -53,7 +53,7 @@ function loadCustomer() {
 function saveCustomer(customer) {
   localStorage.setItem(STORAGE_CUSTOMER_KEY, JSON.stringify(customer));
 }
-
+//
 function formatPrice(value) {
   return `$${value.toFixed(2)}`;
 }
@@ -153,7 +153,7 @@ function attachProductButtons() {
       addToCart(productId);
     });
   });
-}
+}//
 
 function attachCartActions() {
   if (!cartItemsElement) return;
@@ -253,7 +253,7 @@ function initSlideshow() {
     });
     slideTrack.style.transform = `translateX(-${index * 100}%)`;
   }
-
+//    
   function nextSlide() {
     slideIndex = (slideIndex + 1) % slideItems.length;
     showSlide(slideIndex);

@@ -17,4 +17,3 @@ This project is a modern and responsive mining company website developed to prov
 - CSS (3)
 - JavaScript
 - Visual Studio Code
-//

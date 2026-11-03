@@ -236,7 +236,7 @@ function attachDeliveryForm() {
 
       await emailjs.send(
         'service_xosfsw7',
-        'template_7f3q2uq',
+        'template_w9vyu6a',
         {
           name: customer.name,
           email: customer.email,

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<body data-page="confirmation">
+
+  <header class="site-header">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <a class="brand" href="index.html">MinePulse</a>
+<link rel="stylesheet" href="style.css">
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="cart.html">Cart <span class="cart-count">0</span></a>
+      <a href="location.html">Location</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="confirmation-main">
+
+    <section class="section confirmation-section">
+
+      <div class="confirmation-heading">
+        <span class="eyebrow">MinePulse Order Centre</span>
+        <h1>Your order is confirmed!</h1>
+        <p>Thank you for choosing MinePulse. Your order details are shown below.</p>
+      </div>
+
+      <div class="confirmation-panel">
+
+        <!-- SUCCESS MESSAGE -->
+        <div class="confirmation-success">
+          <div class="confirmation-icon">
+            <i class="fas fa-check"></i>
+          </div>
+
+          <h2>Order successfully placed</h2>
+          <p>Your order has been recorded and your confirmation email has been sent if email delivery succeeded.</p>
+        </div>
+
+        <!-- ORDER NUMBER -->
+        <div class="confirmation-order-number">
+          <div>
+            <span>YOUR ORDER NUMBER</span>
+            <strong id="confirmation-order-number">Loading...</strong>
+          </div>
+
+          <i class="fas fa-receipt"></i>
+        </div>
+
+        <!-- ORDER DATE -->
+        <div class="confirmation-date">
+          <i class="far fa-calendar-alt"></i>
+          <span id="confirmation-date">Loading order date...</span>
+        </div>
+
+        <div class="confirmation-divider"></div>
+
+        <!-- PRODUCTS -->
+        <div class="confirmation-products">
+          <div class="confirmation-section-title">
+            <h3>Order summary</h3>
+            <span>Purchased products</span>
+          </div>
+
+          <div id="confirmation-items" class="confirmation-items">
+            <p>Loading your products...</p>
+          </div>
+
+          <div class="confirmation-total">
+            <span>Order total</span>
+            <strong id="confirmation-total">$0.00</strong>
+          </div>
+        </div>
+
+        <div class="confirmation-divider"></div>
+
+        <!-- CUSTOMER DETAILS -->
+        <div class="confirmation-delivery">
+          <div class="confirmation-section-title">
+            <h3>Delivery information</h3>
+            <i class="fas fa-truck"></i>
+          </div>
+
+          <div id="confirmation-customer" class="customer-details">
+            Loading delivery information...
+          </div>
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="confirmation-actions">
+
+          <button type="button" id="print-receipt" class="button button--secondary">
+            <i class="fas fa-print"></i> Print receipt
+          </button>
+
+          <a href="index.html#products" class="button button--primary">
+            <i class="fas fa-shopping-bag"></i> Continue shopping
+          </a>
+
+        </div>
+
+        <p class="confirmation-thankyou">
+          Thank you for shopping with <strong>MinePulse</strong>.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>MinePulse • Thank you for choosing us.</p>
+
+    <div class="contact-info">
+      <a href="mailto:tshungutyrone@gmail.com" class="contact-badge">
+        <i class="fas fa-envelope"></i> tshungutyrone@gmail.com
+      </a>
+
+      <a href="https://wa.me/212694480217" target="_blank" rel="noopener" class="contact-badge">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

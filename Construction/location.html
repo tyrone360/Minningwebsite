@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MinePulse — Location</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body data-page="location">
+  <!-- HEADER -->
   <header class="site-header">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <a class="brand" href="index.html">MinePulse</a>
-    <nav class="site-nav">
+<link rel="stylesheet" href="style.css">
+    <nav class="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
+      <a href="index.html#products">Products</a>
       <a href="cart.html">Cart <span class="cart-count">0</span></a>
       <a href="location.html">Location</a>
       <a href="about.html">About</a>
     </nav>
-    <a class="button button--secondary" href="cart.html">Edit cart</a>
+
+    <a class="button button--secondary" href="index.html#products">
+      Shop now
+    </a>
   </header>
+<body data-page="location">
 
   <main>
     <section class="section section--intro reveal">
@@ -60,7 +56,6 @@
       </div>
     </section>
   </main>
-//
   <footer class="footer">
     <p>MinePulse • Your delivery hub and order tracking center.</p>
     <div class="contact-info">
@@ -73,7 +68,7 @@
       <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
     </div>
   </footer>
-//
+
   <div class="toast" aria-live="polite"></div>
   <script src="script.js"></script>
 </body>
